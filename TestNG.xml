@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="User acceptance TestSuite">
-	<test name="Mytaxi Assignment">
+	<test name="Amazon Product search">
 		<classes>
 			<class name="testclass.TestClass" />
 		</classes>
