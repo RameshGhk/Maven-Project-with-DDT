@@ -18,6 +18,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.Reporter;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
@@ -49,10 +50,12 @@ public class BaseClass {
 		if(prop.getProperty("browser").equals("firefox"))
 		{
 			driver = new FirefoxDriver();
+			Reporter.log("Running test on Firefox browser");
 		}
 		else if(prop.getProperty("browser").equals("chrome"))
 		{
 			driver = new ChromeDriver();
+			Reporter.log("Running test on chrome browser");
 		}
 		else
 		{
