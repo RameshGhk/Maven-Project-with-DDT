@@ -6,18 +6,7 @@ Maven Project with Data Driven Testing
 Maven Project with TestNG-Test automation framework is developed using selenium and Java to automate 
 the product searching, adding to shopping cart and validating the added items in the shopping cart of Amazon.
 
-Page Objects pattern with Data driven testing method is used to:
-
-==> Have consistency in the coding
-==> Avoid redundancy in the coding (code duplication)
-==> Avoid hard coding
-
-There is no hardcoding in code files. 
-The input required to invoke the broswer instance are passed through properties file.
-Diiferent sets of inputs are passed to test cases using DataProviderClass and excel
-All the inputs are passed through properties file
-
-Consider the following user story: 
+# Consider the following user story: 
 As a client I want to search for 10 different products and add to the shopping cart.
 
 # Without framework:
@@ -52,6 +41,11 @@ Page class- contains page methods which perform actions on those web elements.
 
  Re-usability of code.
 
+Page Objects pattern with Data driven testing method is used to:
+There is no hardcoding in code files. 
+The input required to invoke the broswer instance are passed through properties file.
+Diiferent sets of inputs are passed to test cases using DataProviderClass and excel
+All the inputs are passed through properties file
 
 Project Maven-Project-with-DDT consists of:
 
