@@ -4,7 +4,7 @@ Maven Project with Data Driven Testing
 ***************************************************************************************************************************************
 # Introduction
 ## Consider the following user story: 
-As a client I want to search for 10 different products and add to the shopping cart.
+As a client I want to search for 10 different products and add to the shopping cart of www.Amazon.com.
 
 ## Without framework:
 Based on the given user story, one has to write 10 test cases to validate the user requirements. In each test case, code has to be written to find the search box element, to send keys and click on search option. 
@@ -13,30 +13,39 @@ As a results there is a lot of code duplication and increases the efforts requir
 
 ## With framework:
 One can to write re-usable methods to find search box element, send keys, click on search link and add to shopping cart element. These methods can be re-used to search for 10 different products. This way of doing will result in:
+
 Defining the company’s / Team’s way of doing things.
+
 Common and structured standards of coding.
+
 Every member of the team should follow the same standards.
+
 Less efforts required to write automation.
+
 Easy to maintain.
+
 Increase in speed and accuracy of automation process.
 
 ## Page Object Model 
 It is a design pattern to create Object Repository for web UI elements.
+
 One page class for each web page in the application.
+
 Page class – finds the web elements of the web page.
+
 Page class- contains page methods which perform actions on those web elements.
 
 ## Advantages of  Page Object Model
 
-  Makes our code cleaner and easy to understand.
+Makes our code cleaner and easy to understand.
 
- Easy to visualize each step of scenario, view and edit test cases intuitively.
+Easy to visualize each step of scenario, view and edit test cases intuitively.
 
- Shorten the learning curve for testers and helps QA teams to meet timelines.
+Shorten the learning curve for testers and helps QA teams to meet timelines.
 
- Reduce the redundancy of the code.
+Reduce the redundancy of the code.
 
- Re-usability of code.
+Re-usability of code.
 
 # About the project
 Maven Project with TestNG-Test automation framework is developed using selenium and Java to automate 
@@ -47,7 +56,7 @@ Diiferent sets of inputs are passed to test cases using DataProviderClass and ex
 
 ## Project Maven-Project-with-DDT consists of:
 
-1) basicsetup package:
+1)basicsetup package:
   Consists a Generic class "BaseClass" where test set up and test tear down methods are defined. This class can be used in any
   other test class to pass the driver instance with all the required inputs like broswer, url and login details etc to execute the test
 
